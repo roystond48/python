@@ -1,0 +1,27 @@
+thislist = ["apple","banana","kiwi","mango","cherry"]
+
+print(thislist)
+print(thislist[3])
+print(thislist[2])
+print(thislist[0])
+print(thislist[:2])
+print(thislist[0:])
+print(thislist[0:3])
+
+for i in thislist:
+    print(i)
+
+for i in thislist:
+    if i == "kiwi":
+        print(i)
+        break
+
+if "apple" in thislist:
+    print("Heloow")
+
+print(len(thislist))
+
+thislist.sort()
+
+print(thislist)
+----------------------------------------------------------------------

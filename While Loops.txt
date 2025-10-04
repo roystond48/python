@@ -1,0 +1,138 @@
+Sum of N Numbers
+num = int(input("enter a number : " ))
+n = 1
+
+for i in range (1,num+1):
+    n += i
+
+print(n)
+--------------------------------------------------------------------------------
+Factorial of given number
+num = int(input("enter a number : " ))
+Fact = 1
+
+for i in range (1,num+1):
+    Fact *= i
+
+print(Fact)
+--------------------------------------------------------------------------------
+Armstrong or Not
+num = int(input("enter a number : "))
+check = num
+sum = 0
+
+while num > 0:
+    rem=num%10
+    sum+=rem**3
+    num//=10
+
+if sum == check:
+    print("armstrong")
+else:
+    print("Not armstrong")
+---------------------------------------------------------------------------------------------
+Reverse the number given by user
+num = int(input("Enter a number : "))
+
+reversednum = 0
+
+while num > 0:
+    digit = num % 10
+    reversednum = reversednum * 10 + digit
+    num //= 10
+
+print("The reversed number is:", reversednum)
+-------------------------------------------------------------------------------------------------
+Palindrome
+num = int(input("Enter number:"))
+temp=num
+rev=0
+while num>0:
+    dig=num%10
+    rev=rev*10+dig
+    num=num//10
+    
+if temp==rev:
+    print("The number is a palindrome!")
+else:
+    print("The number is not a palindrome!")
+---------------------------------------------------------------------------------------
+Prime number
+n = int(input("Enter a number : "))
+
+if n<=1:
+    print("not a prime number")
+
+else:
+    is_prime = True
+
+for i in range(2, int(n**0.5)+1):
+    if n % i == 0:
+        is_prime = False
+        break
+
+if is_prime:
+    print("prime number")
+else:
+    print("not a prime number")
+-----------------------------------------------------------------------------------------------------
+Fibonacci Sequence
+n = int(input("Enter a number "))
+n1, n2 = 0, 1
+count = 0
+if n <= 0:
+     print("Please enter greater number")
+elif n == 1:
+    print("Fibonacci sequence upto",n,":")
+    print(n1)
+
+else:
+    print("Fibonacci sequence:")
+    while count < n:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1
+--------------------------------------------------------------------------------------------------------
+All programs
+Choice = int(input("Enter 1 for Sum of N number\nEnter 2 for Factorial\nEnter 3 for Armstrong\nEnter 4 for Reverse number\nEnter 5 for Palindrome\nEnter 6 for prime number\nEnter 7 for Fibonacci\nEnter your choice : "))
+
+if Choice == 1:
+    num = int(input("Enter a number : "))
+    n = 1
+    for i in range(1, num+1):
+        n += 1
+        print(n)
+        
+elif Choice == 2:
+    num = int(input("Enter a number : "))
+    FAct = 1
+    for i in range(1, num+1):
+        FAct *= 1
+        print(FAct)
+
+elif Choice == 3:
+    num = int(input("enter a number : "))
+check  = num
+sum = 0
+
+while num > 0:
+    rem=num%10
+    sum+=rem**3
+    num//=10
+
+if sum == check:
+    print("armstrong")
+else:
+    print("Not armstrong")
+
+elif Choice == 4:
+    num = int(input("enter a number : "))
+    Reversednum = 0
+
+while num > 0:
+    digit = num%10
+    Reversednum = Reversednum*10+digit
+    num //= 10
+    print(Reversednum)

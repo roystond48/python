@@ -1,0 +1,47 @@
+Strings
+"""
+String is data type in python. It is a collection of characters. The string is
+immutable means you can’t change an existing string.
+"""
+num1 = input("Enter the value : ")
+
+count = 0
+for i in num1:
+    print(i,end=" ")
+    count += 1
+    
+print(f"\nTotal characters : {count}")
+
+
+value = input("Enter the value : ")
+
+print(num1.find(value,0,len(num1)))
+
+
+"""------------------------------------------------------------------------------------"""
+
+num1 = input("Enter the value : ")
+
+num2 = input("Enter the value : ")
+num1 = num1+num2
+
+print(num1+num2)
+
+print(num1)
+
+"""------------------------------------------------------------------------------------"""
+
+
+num1 = input("Enter the value : ")
+
+print("original value ------ ",num1)
+
+num2 = num1[::-1]
+
+print("Value is ------ ",num2)
+if num1 == num2:
+    print(num1," is palindrome")
+else:
+    print(num1," is not a palindrome")
+
+""-----------------------------------------------------------------------------------------------"""
